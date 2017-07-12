@@ -5,14 +5,14 @@
   "version": "0.1.0",
   "contributors": [
     {
-      "name": "Ethan Welty",
+      "title": "Ethan Welty",
       "email": "ethan.welty@gmail.com",
-      "roles": "Assembled and published the datapackage."
+      "role": "author"
     }
   ],
   "sources": [
     {
-      "name": "Original data, scripts, and documentation",
+      "title": "Original data, scripts, and documentation",
       "path": "sources/"
     }
   ],
@@ -26,12 +26,14 @@
           {
             "name": "lat",
             "type": "number",
-            "description": "Latitude in decimal degrees (WGS84, EPSG:4326)."
+            "description": "Latitude (WGS84, EPSG:4326).",
+            "unit": "°"
           },
           {
             "name": "lng",
             "type": "number",
-            "description": "Longitude in decimal degrees (WGS84, EPSG:4326)."
+            "description": "Longitude (WGS84, EPSG:4326).",
+            "unit": "°"
           }
         ]
       }
@@ -46,12 +48,13 @@
             "name": "t",
             "type": "datetime",
             "description": "Date and time (UTC).",
-            "format": "YYYY-MM-DD'T'hh:mm:ss'Z'"
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "value",
             "type": "number",
-            "description": "Velocity (m / day)."
+            "description": "Velocity.",
+            "unit": "m d-1"
           },
           {
             "name": "sequence",
@@ -71,12 +74,13 @@
             "name": "t",
             "type": "datetime",
             "description": "Date and time (UTC).",
-            "format": "YYYY-MM-DD'T'hh:mm:ss'Z'"
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "value",
             "type": "number",
-            "description": "Air temperature (°C)."
+            "description": "Air temperature.",
+            "unit": "°C"
           },
           {
             "name": "sequence",
@@ -96,12 +100,13 @@
             "name": "t",
             "type": "datetime",
             "description": "Date and time (UTC).",
-            "format": "YYYY-MM-DD'T'hh:mm:ss'Z'"
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "value",
             "type": "number",
-            "description": "Atmospheric pressure (mbar)."
+            "description": "Atmospheric pressure.",
+            "unit": "mbar"
           },
           {
             "name": "sequence",
@@ -121,13 +126,13 @@
             "name": "t_begin",
             "type": "datetime",
             "description": "Date and time (UTC) of precipitation onset.",
-            "format": "YYYY-MM-DD'T'hh:mm:ss'Z'"
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "t_end",
             "type": "datetime",
             "description": "Date and time (UTC) of precipitation end.",
-            "format": "YYYY-MM-DD'T'hh:mm:ss'Z'"
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "notes",
